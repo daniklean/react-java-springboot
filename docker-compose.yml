@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  cardatabase_db:
+    image: mariadb:11.3.1
+    container_name: cardatabase_db
+    environment:
+      MARIA_DB:
+      MARIA_USER:
+      MARIA_PASSWORD:
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    command: --init-file /docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 3306:3306
+
+  adminer:
+      image: adminer
+      container_name: adminer_mariadb
+      ports:
+        - 8080:8080
