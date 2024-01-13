@@ -1,16 +1,48 @@
-# Compiled class file
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# Compiled class files
 *.class
 
-# Log file
+# Log files
 *.log
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Java package files
 *.jar
 *.war
 *.nar
@@ -19,6 +51,56 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# .mvn/wrapper/maven-wrapper.jar
+# .mvn/wrapper/MavenWrapperDownloader.java
+
+# Node package files (si usa front-end con npm)
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
+
+# Mac OS files
+.DS_Store
+
+# Application-specific files 
+# secrets.yml
+# TODO.md
+
+
+# Environments directory for Python virtual environments
+
+# Si se está utilizando algún script o herramienta de Python
+
+# Envs
+.env
+
+# Properties Springboot Settings Data
+application.properties
+application.yml
+
+
+# Archivos de copia de seguridad creados por editores de texto como VSCode, Sublime, etc.
+*~
+*.bak
+*.swp
+*.swo
+
+# Archivos de cobertura de código y resultados de pruebas
+/coverage/
+/.pytest_cache/
+/test-results/
+
+# Herramientas específicas de CI/CD 
+/jenkins/
+/.travis.yml
+/.github/
+/gitlab-ci.yml
+
+# Archivos de configuración del sistema operativo Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Carpeta de documentación de la API
+/swagger-ui/
